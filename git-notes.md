@@ -177,6 +177,14 @@ git log <filename>
 
 Every log element shows the author credentials, date, commit message and the tag (this really long id number of each commit).
 
+This shows more details about every commit.
+
+```shell
+git log --stat
+```
+
+![](./etc/basic-7.PNG)
+
 ## Git Show
 
 This shows the most recent change
@@ -195,5 +203,25 @@ This shows all the changes between two specified commits:
 
 ```shell
 git diff <commit1_id> <commit2_id>
+```
+
+This shows all the changes between current directory and staged files:
+
+```shell
+git diff
+```
+
+## Git Reset
+
+This lets go back to some previous commit version. There is a hard and soft mode. The hard mode restores everything to the specified commit; the soft mode restores everything in the directory but doesn't restore the `staging` area.
+
+```shell
+git reset <commit_id> --hard
+```
+
+The hard reset is an agressive way to go back in the past. All the commits after the one specified will be deleted, and there will be no way to go back to the previous `head` version.
+
+```shell
+git reset <commit_id> --soft 
 ```
 
