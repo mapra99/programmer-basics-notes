@@ -50,7 +50,7 @@ Binary files are files that are encoded into a binary system, so they can not be
 
 **Important**: Git and GitHub take version control of only plain text files. It means that if an image or any other binary file is stored in a repository, Git won't keep track of changes made to it. GitHub allows the cloud storage of the file, but it doesn't trace their changes either.
 
-## Basic Work Cycle in GitHub
+## Basic Work Cycle in Git
 
 Once a directory is created to start the project, the command `git init`does the following things:
 
@@ -71,6 +71,12 @@ The command `git commit -m "<comment>"` does the following:
 1. The changes in the `staging` are moved to the repository in the `.git`directory.
 
 ![](./etc/basic-1.PNG)
+
+## Basic Work Cycle in Remote Repositories
+
+![](./etc/remoting-1.PNG)
+
+![](./etc/remoting-2.PNG)
 
 ## Branching and Merging
 
