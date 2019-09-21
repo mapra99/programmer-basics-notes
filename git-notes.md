@@ -268,4 +268,3 @@ To go back to the current branch:
 ```shell
 git checkout <branch_name> <filename>
 ```
-
