@@ -225,6 +225,30 @@ The hard reset is an agressive way to go back in the past. All the commits after
 git reset <commit_id> --soft 
 ```
 
+The soft reset deletes all the commits history and the file, but it holds the current `staging` area.
+
+## Git RM
+
+This command deletes git files without deleting their commits history. This means that **the file could be restored going back to a previous commit version where the file still exists**. This is a big difference comparing `git rm` and `git reset`
+
+This deletes the file in the staging area only.
+
+```shell
+git rm <filename> --cached
+```
+
+This deletes the file in both staging area and project directory
+
+```shell
+git rm <filename> --force
+```
+
+This deletes all the content only in `staging` area.
+
+```shell
+git reset HEAD
+```
+
 ## Git Checkout
 
 This lets bring back some previous commit of a specified file:
