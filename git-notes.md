@@ -80,6 +80,47 @@ If a bug is found in the `master` branch, a `hotfix` is needed, so a new branch 
 
 ![](./etc/basic-2.PNG)
 
+## Setting Up Git
+
+### Local Credentials
+
+Git needs credentials to author the commits. The credentials are the Name and Email of the Person who is commiting changes. To add this values, the following must be done on Shell:
+
+```shell
+git config --global user.name "<your_name>"
+git config --global user.email "your@email.com"
+```
+
+To check if the credentials were stored:
+
+```shell
+git config --list
+```
+
+In the list of parameters, `user.name` and `user.email` must be there.
+
+## Git Config
+
+This command deals with all the configuration parameters that Git needs.
+
+Show all the existing configuration parameters:
+
+```shell
+git config --list
+```
+
+Show the path where the configuration parameters are stored:
+
+```shell
+git --list --show-origin
+```
+
+Change the value of a configuration parameter:
+
+```shell
+git config --<param_name> <new_value>
+```
+
 ## Git Add
 
 This will move the changes to the `staging` area allocated in the RAM Memory.
