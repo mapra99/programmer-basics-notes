@@ -177,3 +177,23 @@ git log <filename>
 
 Every log element shows the author credentials, date, commit message and the tag (this really long id number of each commit).
 
+## Git Show
+
+This shows the most recent change
+
+For a specified file:
+
+```shell
+git show <filename>
+```
+
+![](./etc/basic-6.PNG)
+
+## Git Diff
+
+This shows all the changes between two specified commits:
+
+```shell
+git diff <commit1_id> <commit2_id>
+```
+
