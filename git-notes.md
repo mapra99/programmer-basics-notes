@@ -79,3 +79,46 @@ By default, the current branch is called the `master` branch. As many versions c
 If a bug is found in the `master` branch, a `hotfix` is needed, so a new branch can be created with that name. When the bug is fixed, then `git merge` must be called to merge the `hotfix` branch to the `master branch`. If the `experiments` branch is done, then it also gets merged with the `master` branch.
 
 ![](./etc/basic-2.PNG)
+
+## Git Add
+
+This will move the changes to the `staging` area allocated in the RAM Memory.
+
+Add the changes of a specified file:
+
+```shell
+git add <filename>
+```
+
+Add the changes of all files:
+
+```shell
+git add .
+```
+
+## Git Commit
+
+This will move the changes from the `staging` area to the database in the `.git`directory. It is very good practice to always give descriptive comments summarizing the changes.
+
+Commit staging changes:
+
+```shell
+git commit -m "<comment>"
+```
+
+## Git Status
+
+This will return the status of the repo, it will list the files that have untracked changes, or will tell if there is nothing to commit.
+
+```shell
+git status
+```
+
+![](./etc/basic-3.PNG)
+
+After adding some changes with `git add`, this will be the new status:
+
+![](./etc/basic-4.PNG)
+
+If the changes are commited, this will be the new status:
+
