@@ -225,3 +225,23 @@ The hard reset is an agressive way to go back in the past. All the commits after
 git reset <commit_id> --soft 
 ```
 
+## Git Checkout
+
+This lets bring back some previous commit of a specified file:
+
+```shell
+git checkout <commit_id> <filename>
+```
+
+If all files from previous commit want to be brought back:
+
+```shell
+git checkout <commit_id>
+```
+
+To go back to the current branch:
+
+```shell
+git checkout <branch_name> <filename>
+```
+
