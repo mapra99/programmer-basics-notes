@@ -163,3 +163,17 @@ After adding some changes with `git add`, this will be the new status:
 
 If the changes are commited, this will be the new status:
 
+## Git Log
+
+This shows the history of commits.
+
+For a specified file:
+
+```shell
+git log <filename>
+```
+
+![](./etc/basic-5.PNG)
+
+Every log element shows the author credentials, date, commit message and the tag (this really long id number of each commit).
+
