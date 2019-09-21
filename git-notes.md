@@ -79,4 +79,3 @@ By default, the current branch is called the `master` branch. As many versions c
 If a bug is found in the `master` branch, a `hotfix` is needed, so a new branch can be created with that name. When the bug is fixed, then `git merge` must be called to merge the `hotfix` branch to the `master branch`. If the `experiments` branch is done, then it also gets merged with the `master` branch.
 
 ![](./etc/basic-2.PNG)
-
