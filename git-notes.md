@@ -316,3 +316,21 @@ When a conflict is detected between `<current_branch` and `target_branch`, the f
 
 So Git waits for the user to manually delete the version that wants to be deleted. After that, a new commit should be created and `git merge` should be called again.
 
+## Git Remote
+
+This command handles the remoting connections of the repo.
+
+This adds a new remote connection:
+
+```shell
+git remote add <remote_name> <repo_url>
+```
+
+This shows all the existing remote connections:
+
+```shell
+git remote -v
+```
+
+## Git Push
+
