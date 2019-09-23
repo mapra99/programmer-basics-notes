@@ -297,3 +297,13 @@ This deletes an existing branch:
 git branch -d <branch_name>
 ```
 
+## Git Merge
+
+This commands is used to merge one branch in another:
+
+```shell
+#In <current_branch>
+git checkout <target_branch>
+git merge <current_branch>
+```
+
