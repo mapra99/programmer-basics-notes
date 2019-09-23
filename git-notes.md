@@ -305,5 +305,6 @@ This commands is used to merge one branch in another:
 #In <current_branch>
 git checkout <target_branch>
 git merge <current_branch>
+#It will merge from <current_branch> to <target_branch>
 ```
 
