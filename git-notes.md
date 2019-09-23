@@ -274,3 +274,26 @@ To go back to the current branch:
 ```shell
 git checkout <branch_name> <filename>
 ```
+
+## Git Branch
+
+This command is related to branches creation, deletion and listing.
+
+This creates a new branch:
+
+```shell
+git branch <new_branch_name>
+```
+
+This lists all the existing branches:
+
+```shell
+git branch
+```
+
+This deletes an existing branch:
+
+```shell
+git branch -d <branch_name>
+```
+
