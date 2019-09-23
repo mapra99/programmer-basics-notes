@@ -332,5 +332,29 @@ This shows all the existing remote connections:
 git remote -v
 ```
 
-## Git Push
+## Merging new data from remote repo to current repo
+
+```shell
+# Primero: Guardar la URL del repositorio de GitHub
+# con el nombre de origin
+# (Usualmente <remote_name> es origin)
+git remote add <remote_name> <repo_url>
+
+# Segundo: Verificar que la URL se haya guardado
+# correctamente:
+git remote
+git remote -v
+
+# Tercero: Traer la versión del repositorio remoto y
+# hacer merge para crear un commit con los archivos
+# de ambas partes. Podemos usar git fetch y git merge
+# o solo el git pull con el flag --allow-unrelated-histories:
+git pull <remote_name> master --allow-unrelated-histories
+
+# Por último, ahora sí podemos hacer git push para guardar
+# los cambios de nuestro repositorio local en GitHub:
+git push <remote_name> master
+```
+
+
 
