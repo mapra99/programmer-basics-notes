@@ -308,3 +308,11 @@ git merge <current_branch>
 #It will merge from <current_branch> to <target_branch>
 ```
 
+### Conflicts Solving
+
+When a conflict is detected between `<current_branch` and `target_branch`, the file is automatically edited by Git, creating a syntax similar to this:
+
+![](./etc/merge-1.PNG)
+
+So Git waits for the user to manually delete the version that wants to be deleted. After that, a new commit should be created and `git merge` should be called again.
+
